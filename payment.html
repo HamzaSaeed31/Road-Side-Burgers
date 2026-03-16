@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+.web{
+    width: 1200 px;
+    margin : auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(800px_COLOURBOX31226305.jpg);
+    height:  100vh;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    
+}
+.navigation{
+        float: center;
+        margin-top: 25;
+    }
+    .navigation li{
+        display: inline-block;
+    }
+    .navigation li a{
+        color:white;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: cursive;
+        font-size: 14px;
+        
+    }
+    .navigation li a:hover{
+        background: #fff;
+        color: #333;
+        
+    }
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.button2
+{
+	
+	display: block;
+	width: 100%;
+	border: black;
+	background-color: green;
+	color: white;
+	height : 50px;
+	font-size: 14px;
+	cursor: grabbing;	
+	text-align: center;
+}
+</style>
+</head>
+<body>
+  <header>
+        <br>
+        <br>
+        <div class="web">
+            <ui class="navigation">
+		<li><a href = "main.html"><u>Home</u></a></li>
+                <li><a href = "menu.html"><u>Menu</u></a></li>
+                <li><a href = "deals.html"><u>Deals</u></a></li>
+                <li><a href = "cart.html"><u>Cart</u></a></li>
+                <li><a href = "payment.html"><u>Payment</u></a></li>
+		<li><a href = "login.html"><u>login/sign-up</u></a></li>
+            </ui>
+            <br><br>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <br>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="**********@*****.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="house no. , street no. , sector">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Islamabad">
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <br>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Date</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="DD/MM/YYYY">
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart 
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i> 
+          <b>4</b>
+        </span>
+      </h4>
+      <br>
+      <p>Deal 1<span class="price">Rs.485</span></p>
+      <br>
+      <p>Pepperoni Pizza<span class="price">Rs.1200</span></p>
+      <br>
+      <hr>
+      <br>
+      <p>Total <span class="price" style="color:black"><b>Rs.1685</b></span></p>
+      <button class = "button2" type = "button" onclick = "document.location='main.html'" >Proceed to Checkout</button><br><br><br><!--checkout button and link added-->
+    </div>
+  </div>
+</div>
+</body>
+</html>

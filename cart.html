@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<title>online Cart using Bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!--upper 6 lines are bootstrap codes-->
+<style>
+.background_image 
+{
+	background-image: url(./800px_COLOURBOX31226305.jpg);/*insert image*/
+	background-size: 100%;
+	margin-top:-10px;
+	margin-left:-10px;
+		margin-right:-5px;
+	
+}
+.heading
+{
+	color : white;
+	text-align: center;
+	font-size: 30px;
+	
+	margin : 30px;
+	height : 35px;
+	margin-right: 50px;
+}
+.img
+{
+	width: 195px;
+	height:175px;
+	
+}
+.cart
+{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-left: 20px;
+	gap : 14px;
+	padding: 14px 0;
+	
+}
+
+.button
+{
+	color: white;
+	height : 30px;
+	font-size: 14px;
+	cursor: grabbing;	
+	text-align: center;
+	display: block;
+	width: 20%;
+	border: black;
+	background-color: Red;
+	margin-left:40%
+}
+.button2
+{
+	
+	display: block;
+	width: 100%;
+	border: black;
+	background-color: green;
+	color: white;
+	height : 50px;
+	font-size: 14px;
+	cursor: grabbing;	
+	text-align: center;
+}
+.navigation{
+        float: center;
+        margin-top: 25;
+    }
+    .navigation li{
+        display: inline-block;
+    }
+    .navigation li a{
+        color:white;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: cursive;
+        font-size: 14px;
+        
+    }
+    .navigation li a:hover{
+        background: #fff;
+        color: #333;
+        
+    }
+    .Introduction{
+        position: absolute;
+        width: 600px;
+        height: 200px;
+        margin: 15% 30%;
+    }
+    .Introduction{
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: cursive;
+    }
+.web{
+    width: 1200 px;
+    margin : auto;
+    text-align: center;
+    }
+</style>
+</head>
+<body>
+<br>
+<br>
+<div class ="background_image">
+<div class="web">
+            <ui class="navigation">
+                <li><a href = "main.html"><u>Home</u></a></li>
+                <li><a href = "menu.html"><u>Menu</u></a></li>
+                <li><a href = "deals.html"><u>Deals</u></a></li>
+                <li><a href = "cart.html"><u>Cart</u></a></li>
+                <li><a href = "payment.html"><u>Payment</u></a></li>
+		<li><a href = "login.html"><u>login/sign-up</u></a></li>
+            </ui>
+<div class ="heading">
+Cart
+</div>
+<div class="card"><!-- using bootstrap class-->
+<div class ="cart">
+	<div class="card-body">
+		<h4 class="card-title">CART</h4><!-- using bootstrap class-->
+		<p class="card-text">Your Order</p>
+		<div>
+		
+		<h4> Deal 1:  zinger burger <br> QTY 1<br>Total: Rs. 485</h4>
+		<button class = "button" type = "button"  >Remove From Cart</button><br><br><br>
+		</div>
+		<div>
+		<h4> pepperoni pizza <br> QTY 1<br>Total: Rs. 1200</h4>
+		<button class = "button"= "button" >Remove From Cart</button><br><br><br>
+		</div>
+		<br><br>
+		<div style="text-align:center">
+		<h4>Subtotal<br>Rs. 1685<br></h4>
+		<button class = "button2" type = "button" onclick = "document.location='payment.html'" >Proceed to Checkout</button><br><br><br><!--checkout button and link added-->
+		</div>	
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>

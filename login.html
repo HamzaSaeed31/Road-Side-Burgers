@@ -1,0 +1,280 @@
+<!doctype html>
+<style>
+    * {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  text-align: center;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+    text-align: center;
+  }
+}
+    *{
+    margin: 0;
+    padding: 0;
+}
+.web{
+    width: 1200 px;
+    margin : auto;
+    text-align: center;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(800px_COLOURBOX31226305.jpg);
+    height:  100vh;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    
+}
+.navigation{
+        float: center;
+        margin-top: 25;
+    }
+    .navigation li{
+        display: inline-block;
+    }
+    .navigation li a{
+        color:white;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: cursive;
+        font-size: 14px;
+        
+    }
+    .navigation li a:hover{
+        background: #fff;
+        color: #333;
+        
+    }
+    .Introduction{
+        position: absolute;
+        width: 600px;
+        height: 200px;
+        margin: 15% 30%;
+    }
+    .Introduction{
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: cursive;
+    }
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 80px;
+}
+body {font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(800px_COLOURBOX31226305.jpg);
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  width: 100%;
+  text-align: center;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 1 8px 1;
+  background-color: white;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+  color: black;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+     text-align: center;
+  }
+}
+p{
+  text-align: center;
+}
+}
+
+</style>
+<html>
+<head>
+<title>RoadSide Burgers</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="web">
+            <ui class="navigation">
+                <li><a href = "main.html"><u>Home</u></a></li>
+                <li><a href = "menu.html"><u>Menu</u></a></li>
+                <li><a href = "deals.html"><u>Deals</u></a></li>
+                <li><a href = "cart.html"><u>Cart</u></a></li>
+                <li><a href = "payment.html"><u>Payment</u></a></li>
+		<li><a href = "login.html"><u>login/sign-up</u></a></li>
+            </ui>
+    <header>
+        <br>
+        <br>
+        <br>
+        <div class="Introduction">
+            <h1>"Road-Side Burgers"</h1>
+        </div>
+    </header>
+    <form action="/action_page.php" method="post">
+<div class="imgcontainer">
+<img src="unnamed.jpg" alt="Avatar" class="avatar">
+</div>
+<div class="container">
+<label for="uname"><b style=" color: black;">Username</b></label>
+<input type="text" placeholder="Enter Username" name="uname" required>
+<label for="psw"><b style=" color: black;">Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+<button type="submit"><a href = "main.html">Login</a></button>
+<label style=" color: black;">
+<input type="checkbox" checked="checked" name="remember" > Remember me
+</label>
+</div>
+</form>
+<hr>
+<hr>
+<hr>
+<form action="action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1 style="color: black;">Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      
+      <br>
+      <div class="container">
+      <button type="submit"><a href = "main.html">Sign-Up</a></button>
+    </div>
+    </div>
+  </div>
+</form>
+</div>
+</form>
+</body>
+</html>
